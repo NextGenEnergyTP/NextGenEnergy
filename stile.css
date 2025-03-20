@@ -1,20 +1,88 @@
-/*STILE PRINCIPALE DELLA PAGINA*/
-body{
-    background-color: #CD5C5C;
+/* STILE PRINCIPALE DELLA PAGINA */
+body {
+    background-color: #CD5C5C;  /* Colore di sfondo del body */
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-}
-.titolo {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 3em;
-    color: rgba(255, 255, 255, 0.5);  /* Colore opaco iniziale */
-    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    position: center;
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    overflow: hidden;
 }
 
-.titolo:hover {
-    color: #fff;  /* Colore illuminato */
-    text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff, 0 0 100px #ff00ff;
+/* Container per i rettangoli */
+.containerRettangolo {
+    margin-top: 280px;
+}
+
+/* Rettangolo con larghezza completa e altezza di 10px */
+.rettangolo {
+    width: 100%;    /* Larghezza di 100% della pagina */
+    height: 10px;  /* Altezza di 10px */
+}
+
+/* Colori per i rettangoli */
+.verde {
+    background-color: green;
+}
+
+.bianco {
+    background-color: white;
+}
+
+.rosso {
+    background-color: red;
+}
+
+/* ANIMAZIONE IMMAGINE */
+.animazioneImm {
+    position: absolute;
+    width: 150px;  /* Imposta la larghezza dell'immagine */
+    height: auto;  /* L'altezza verrà adattata in modo proporzionale */
+    animation: muoviImmagine 5s ease-in-out forwards;  /* Anima l'immagine con la durata di 5 secondi */
+    margin-top: -280px;
+}
+
+/* Definisci l'animazione con @keyframes */
+@keyframes muoviImmagine {
+    0% {
+        left: -100px;  /* L'immagine parte fuori dalla pagina a sinistra */
+    }
+    100% {
+        left: 400px;  /* L'immagine si ferma a 400px dalla sinistra */
+    }
+}
+
+/* MENU */
+/* Stile per il menu */
+nav {
+    background-color: #333;  /* Sfondo del menu */
+    padding: 1px 0;  /* Distanza superiore e inferiore ridotta (meno alto) */
+}
+
+.menu {
+    list-style: none; /* Rimuove i pallini predefiniti */
+    display: flex;  /* Allinea i menu orizzontalmente */
+    justify-content: center; /* Centra il menu */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 80px; /* Distanza maggiore tra gli elementi del menu */
+}
+
+.menu a {
+    color: white; /* Testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.1s, box-shadow 0.1s ease; /* Aggiunge transizione per l'illuminazione */
+    border: 2px solid transparent; /* Aggiungi un bordo trasparente inizialmente */
+}
+
+/* Stile per il passaggio del mouse (hover) */
+.menu a:hover {
+    color: #ff6347;  /* Cambia il colore del testo quando il mouse passa sopra */
+    box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347; /* Illumina con un'ombra rossastra */
+    border-color: #ff6347;  /* Aggiunge un bordo di colore */
 }
