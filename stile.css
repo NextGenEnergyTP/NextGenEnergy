@@ -95,6 +95,7 @@ nav {
     min-width: 180px;
     list-style: none;
     padding: 0;
+    box-shadow: none;
     z-index: 1;  /* Aggiungi questo per assicurarti che il menu si sovrapponga sopra gli altri elementi */
 }
 
