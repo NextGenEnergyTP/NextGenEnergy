@@ -86,7 +86,9 @@ nav {
     box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347; /* Illumina con un'ombra rossastra */
     border-color: #ff6347;  /* Aggiunge un bordo di colore */
 }
-
+ .menu li:hover .dropdown {
+            display: block;
+        }
 
 /*SOCIAL*/
 #instagram {
