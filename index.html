@@ -6,9 +6,11 @@
     <body>
         <script>
             function clearPage() {
-                document.body.innerHTML = '';  // Rimuove tutto il contenuto
+                document.getElementById("contenuto").style.display = "none";  // Nasconde il contenuto
+                document.getElementById("nuovoTesto").style.display = "block"; // Mostra il nuovo contenuto
             }
         </script>
+        <div id="contenuto">
         <img src="logo1.png" alt="Immagine animata" class="animazioneImm">
         <div class="containerRettangolo">
     <div class="rettangolo verde"></div>
@@ -21,6 +23,16 @@
             <li><a href="#">Video Elaborato</a></li>
         </ul>
     </nav>
+        </div>
+        <div id="nuovoTesto">
+            <nav>
+        <ul class="menu">
+            <li><a href="index.html">Introduzione</a></li>
+            <li><a href="#" onclick="clearPage()"></a>Infografica</a></li>
+            <li><a href="#">Video Elaborato</a></li>
+        </ul>
+    </nav>
+        </div>
     
     </body>
 </html>
