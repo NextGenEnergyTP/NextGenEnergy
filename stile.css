@@ -131,3 +131,29 @@ nav {
 #instagram:hover {
     transform: scale(1.5); /* Leggero ingrandimento */
 }
+#facebook {
+    position: relative; /* Era absolute, lo rendiamo relativo per rimanere dentro il dropdown */
+    cursor: pointer;
+    width: 50px; /* Riduciamo la dimensione */
+    height: 50px;
+    transition: transform 0.2s ease-in-out; /* Effetto di ingrandimento */
+    vertical-align: middle;
+}
+
+#facebook:hover {
+    transform: scale(1.5); /* Leggero ingrandimento */
+}
+#x {
+    position: relative; /* Era absolute, lo rendiamo relativo per rimanere dentro il dropdown */
+    cursor: pointer;
+    width: 50px; /* Riduciamo la dimensione */
+    height: 50px;
+    transition: transform 0.2s ease-in-out; /* Effetto di ingrandimento */
+    vertical-align: middle;
+}
+
+#x:hover {
+    transform: scale(1.5); /* Leggero ingrandimento */
+}
+
+
