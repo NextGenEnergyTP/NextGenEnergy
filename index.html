@@ -9,35 +9,47 @@
                 document.getElementById("contenuto").style.display = "none";  // Nasconde il contenuto
                 document.getElementById("nuovoTesto").style.display = "block"; // Mostra il nuovo contenuto
             }
-        </script>
 
-        <!-- Menu unico, visibile sempre -->
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Introduzione</a></li>
-                <li><a href="#" onclick="clearPage()">Infografica</a></li>
-                <li><a href="#">Video Elaborato</a></li>
-            </ul>
-        </nav>
+            function showHome() {
+                document.getElementById("nuovoTesto").style.display = "none"; // Nasconde il nuovo contenuto
+                document.getElementById("contenuto").style.display = "block"; // Mostra il contenuto principale
+            }
+        </script>
 
         <!-- Contenuto principale -->
         <div id="contenuto">
             <img src="logo1.png" alt="Immagine animata" class="animazioneImm">
+            
             <div class="containerRettangolo">
                 <div class="rettangolo verde"></div>
                 <div class="rettangolo bianco"></div>
                 <div class="rettangolo rosso"></div>
             </div>
+
+            <!-- Menu che appartiene al contenuto principale -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Introduzione</a></li>
+                    <li><a href="#" onclick="clearPage()">Infografica</a></li>
+                    <li><a href="#">Video Elaborato</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <!-- Contenuto alternativo, nascosto inizialmente -->
-        <div id="nuovoTesto" style="display: none; text-align: center; margin-top: 100px;">
+        <!-- Nuovo contenuto per Infografica, inizialmente nascosto -->
+        <div id="nuovoTesto" style="display: none;">
             <h1>Infografica</h1>
             <p>Qui puoi aggiungere il contenuto della tua infografica.</p>
+
+            <!-- Menu che appare dentro il nuovo contenuto -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" onclick="showHome()">Torna alla Home</a></li>
+                    <li><a href="#">Infografica</a></li>
+                    <li><a href="#">Video Elaborato</a></li>
+                </ul>
+            </nav>
         </div>
 
-    </body>
-</html>
-    
     </body>
 </html>
