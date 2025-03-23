@@ -93,8 +93,8 @@ nav {
     position:absolute;
     margin-right: 1000px;
     cursor: pointer;
-    width: 50px;   /* Imposta la larghezza */
-    height: 50px;  /* Correggi l'errore e imposta l'altezza */
+    width: 100px;   /* Imposta la larghezza */
+    height: 100px;  /* Correggi l'errore e imposta l'altezza */
     transition: transform 0.2s ease-in-out; /* Effetto al passaggio del mouse */
 }
 #instagram:hover {
