@@ -122,12 +122,12 @@ nav {
 #instagram {
     position: relative; /* Era absolute, lo rendiamo relativo per rimanere dentro il dropdown */
     cursor: pointer;
-    width: 30px; /* Riduciamo la dimensione */
-    height: 30px;
-    transition: transform 0.3s ease-in-out; /* Effetto di ingrandimento */
+    width: 80px; /* Riduciamo la dimensione */
+    height: 80px;
+    transition: transform 0.5s ease-in-out; /* Effetto di ingrandimento */
     vertical-align: middle;
 }
 
 #instagram:hover {
-    transform: scale(1.2); /* Leggero ingrandimento */
+    transform: scale(2); /* Leggero ingrandimento */
 }
