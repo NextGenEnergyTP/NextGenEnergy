@@ -118,15 +118,14 @@ nav {
 
 /*SOCIAL*/
 #instagram {
-    position:absolute;
-    right: 1000px;
-    top: 1000px;
+    position: relative; /* Era absolute, lo rendiamo relativo per rimanere dentro il dropdown */
     cursor: pointer;
-    width: 80px;   /* Imposta la larghezza */
-    height: 80px;  /* Correggi l'errore e imposta l'altezza */
-    transition: transform 0.5s ease-in-out; /* Effetto al passaggio del mouse */
-     vertical-align: middle;
+    width: 30px; /* Riduciamo la dimensione */
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Effetto di ingrandimento */
+    vertical-align: middle;
 }
+
 #instagram:hover {
-    transform: scale(2); /* Ingrandisce leggermente l'icona quando ci passi sopra */
+    transform: scale(1.2); /* Leggero ingrandimento */
 }
