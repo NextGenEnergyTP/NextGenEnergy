@@ -99,6 +99,8 @@ nav {
 
         .dropdown li {
             display: block;
+            justify-content: center; /* Centra orizzontalmente */
+            align-items: center; /* Centra verticalmente */
         }
 
         .dropdown a {
