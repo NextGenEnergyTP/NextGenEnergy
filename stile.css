@@ -92,6 +92,7 @@ nav {
 #instagram {
     position:absolute;
     right: 1000px;
+    top: 1000px;
     cursor: pointer;
     width: 80px;   /* Imposta la larghezza */
     height: 80px;  /* Correggi l'errore e imposta l'altezza */
