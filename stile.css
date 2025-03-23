@@ -134,29 +134,14 @@ nav {
 }
 
 
-/* Contenitore per i rettangoli */
-.contenitoreRettangoli {
-    display: flex;           /* Allinea i rettangoli orizzontalmente */
-    justify-content: center; /* Centra i rettangoli nella pagina */
-    margin-top: 50px;        /* Distanza tra il contenuto principale e i rettangoli */
+.container_rettangoli {
+    hight: 500px;
+}
+.rettangolo1 {
+    hight: 400px;
+    eight: 250px;
+    background-color: white;
+    color: black;
 }
 
-/* Stile per i rettangoli */
-.rettangolo {
-    width: 200px;           /* Larghezza del rettangolo */
-    height: 300px;          /* Altezza del rettangolo */
-    background-color: #4CAF50; /* Colore di sfondo del rettangolo */
-    color: white;           /* Colore del testo */
-    display: flex;          /* Usa il Flexbox per centrare il testo */
-    justify-content: center; /* Centra orizzontalmente il testo */
-    align-items: center;    /* Centra verticalmente il testo */
-    margin: 0 20px;         /* Distanza tra i due rettangoli */
-    border-radius: 10px;    /* Bordo arrotondato */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombra leggera sotto i rettangoli */
-}
 
-/* Titolo dentro il rettangolo */
-.rettangolo h2 {
-    font-size: 22px;        /* Dimensione del titolo */
-    text-align: center;     /* Allinea il testo al centro */
-}
