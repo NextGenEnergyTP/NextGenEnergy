@@ -86,3 +86,15 @@ nav {
     box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347; /* Illumina con un'ombra rossastra */
     border-color: #ff6347;  /* Aggiunge un bordo di colore */
 }
+
+
+/*SOCIAL*/
+#instagram {
+    cursor: pointer;
+    width: 30px;   /* Imposta la larghezza */
+    height: 30px;  /* Correggi l'errore e imposta l'altezza */
+    transition: transform 0.2s ease-in-out; /* Effetto al passaggio del mouse */
+}
+#instagram:hover {
+    transform: scale(1.2); /* Ingrandisce leggermente l'icona quando ci passi sopra */
+}
