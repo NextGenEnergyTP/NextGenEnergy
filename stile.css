@@ -88,14 +88,15 @@ nav {
 }
  /* Dropdown menu */
         .dropdown {
-            display: none;
-            position: absolute;
-             background-color: transparent;
-            min-width: 180px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            list-style: none;
-            padding: 0;
-        }
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    z-index: 1;  /* Aggiungi questo per assicurarti che il menu si sovrapponga sopra gli altri elementi */
+}
 
         .dropdown li {
             display: block;
