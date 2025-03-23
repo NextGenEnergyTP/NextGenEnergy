@@ -125,6 +125,7 @@ nav {
     width: 80px;   /* Imposta la larghezza */
     height: 80px;  /* Correggi l'errore e imposta l'altezza */
     transition: transform 0.5s ease-in-out; /* Effetto al passaggio del mouse */
+     vertical-align: middle;
 }
 #instagram:hover {
     transform: scale(2); /* Ingrandisce leggermente l'icona quando ci passi sopra */
