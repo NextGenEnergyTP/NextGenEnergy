@@ -21,15 +21,15 @@ body {
 
 /* Colori per i rettangoli */
 .verde {
-    background-color: green;
+    background-color: green !important;
 }
 
 .bianco {
-    background-color: white;
+    background-color: white !important;
 }
 
 .rosso {
-    background-color: red;
+    background-color: red !important;
 }
 
 /* ANIMAZIONE IMMAGINE */
@@ -142,4 +142,8 @@ nav {
     border-radius: 30px;
     width: 100px;
     height: 100px;
+    position: absolute;  /* Permette di posizionarlo in un punto specifico */
+    top: 50%;  /* Lo centra verticalmente */
+    left: 50%; /* Lo centra orizzontalmente */
+    transform: translate(-50%, -50%);
 }
