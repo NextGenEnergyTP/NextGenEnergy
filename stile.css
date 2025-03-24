@@ -1,35 +1,34 @@
 /* STILE PRINCIPALE DELLA PAGINA */
 body {
-    background-color: #CD5C5C;  /* Colore di sfondo del body */
+    background-color: #CD5C5C;  
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0; /* Rimuove il margine predefinito */
-    padding: 0; /* Rimuove il padding predefinito */
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
 /* Container per i rettangoli */
 .containerRettangolo {
-    margin-top: 100px; /* Abbassato rispetto al menu */
+    margin-top: 100px;
 }
 
-/* Rettangolo con larghezza completa e altezza di 10px */
+/* Rettangoli tricolore */
 .rettangolo {
-    width: 100%;    
-    height: 10px;  
+    width: 100%;
+    height: 10px;
 }
 
-/* Colori per i rettangoli */
 .verde {
-    background-color: green !important;
+    background-color: green;
 }
 
 .bianco {
-    background-color: white !important;
+    background-color: white;
 }
 
 .rosso {
-    background-color: red !important;
+    background-color: red;
 }
 
 /* ANIMAZIONE IMMAGINE */
@@ -42,7 +41,6 @@ body {
     left: -100px;
 }
 
-/* Definisci l'animazione con @keyframes */
 @keyframes muoviImmagine {
     0% {
         left: -100px;
@@ -55,7 +53,7 @@ body {
 /* MENU */
 nav {
     background-color: #333;
-    padding: 10px 0; /* Rende il menu più visibile */
+    padding: 10px 0;
 }
 
 .menu {
@@ -80,7 +78,6 @@ nav {
     border: 2px solid transparent;
 }
 
-/* Stile per il passaggio del mouse (hover) */
 .menu a:hover {
     color: #ff6347;
     box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
@@ -138,7 +135,7 @@ nav {
     width: 500px;
     height: 500px;
     position: absolute;
-    top: 120px;  /* 100px sotto il menu */
+    top: 100px;  /* 100px sotto il menu */
     left: 50px; /* Spostato a sinistra */
+    display: block; /* Assicura che sia visibile */
 }
-
