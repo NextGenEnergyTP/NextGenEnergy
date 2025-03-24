@@ -135,6 +135,6 @@ nav {
     width: 350px !important;
     height: 500px !important;
     position: absolute !important;
-    top: 120px !important;  /* 100px sotto il menu */
+    top: 10px !important;  /* 100px sotto il menu */
     left: 50px !important; /* Spostato a sinistra */
 }
