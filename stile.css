@@ -129,13 +129,12 @@ nav {
 
 /* QUADRATO INFORMAZIONI */
 .informazione {
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    width: 350px;
-    height: 500px;
-    position: absolute;
-    top: 20px;  /* 100px sotto il menu */
-    left: 50px; /* Spostato a sinistra */
-    
+    background-color: white !important;
+    color: black !important;
+    border-radius: 15px !important;
+    width: 350px !important;
+    height: 500px !important;
+    position: absolute !important;
+    top: 120px !important;  /* 100px sotto il menu */
+    left: 50px !important; /* Spostato a sinistra */
 }
