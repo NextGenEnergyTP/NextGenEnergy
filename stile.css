@@ -146,5 +146,4 @@ nav {
     top: 50%;  /* Lo centra verticalmente */
     left: 50%; /* Lo centra orizzontalmente */
     transform: translate(-50%, -50%);
-    margin-top: 100px;
 }
