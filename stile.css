@@ -135,14 +135,10 @@ nav {
 }
 
 
-.container_rettangoli {
-    hight: 500px;
-}
-.rettangolo1 {
-    hight: 400px;
-    eight: 250px;
+.rettangolo {
     background-color: white;
     color: black;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
 }
-
-
