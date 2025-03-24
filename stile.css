@@ -135,7 +135,7 @@ nav {
     width: 350px;
     height: 500px;
     position: absolute;
-    top: 100px;  /* Regola questa altezza per posizionarlo sotto il menu */
+    top: 500px;  /* Regola questa altezza per posizionarlo sotto il menu */
     left: 20px;  /* Distanza dal bordo sinistro */
     padding: 20px; /* Un po' di spazio interno */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Leggera ombra */
