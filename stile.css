@@ -142,7 +142,7 @@ nav {
     border-radius: 15px;
     width: 500px;
     height: 500px;
-    position: absolute;  /* Permette il posizionamento libero */
-    top: calc(100px + 50px);  /* 100px sotto il menu (assumendo che il menu sia alto 50px) */
-    left: 50px; /* Lo sposta leggermente da sinistra */
+    position: absolute; /* Permette di posizionarlo liberamente */
+    top: 100px; /* Distanza di 100px dal menu */
+    left: 20px; /* Lo sposta leggermente da sinistra */
 }
