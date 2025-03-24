@@ -52,6 +52,26 @@ body {
     }
 }
 
+
+.animazioneImm2 {
+    position: absolute;
+    width: 150px;  /* Imposta la larghezza dell'immagine */
+    height: auto;  /* L'altezza verrà adattata in modo proporzionale */
+    animation: muoviImmagine2 5s ease-in-out forwards;  /* Anima l'immagine con la durata di 5 secondi */
+    margin-top: -480px;
+}
+
+/* Definisci l'animazione con @keyframes */
+@keyframes muoviImmagine2 {
+    0% {
+        left: -100px;  /* L'immagine parte fuori dalla pagina a sinistra */
+    }
+    100% {
+        left: 800px;  /* L'immagine si ferma a 400px dalla sinistra */
+    }
+}
+
+
 /* MENU */
 /* Stile per il menu */
 nav {
