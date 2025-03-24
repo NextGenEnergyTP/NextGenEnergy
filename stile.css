@@ -142,7 +142,6 @@ nav {
     border-radius: 15px;
     width: 500px;
     height: 500px;
-    position: absolute; /* Permette di posizionarlo liberamente */
-    top: 100px; /* Distanza di 100px dal menu */
-    left: 20px; /* Lo sposta leggermente da sinistra */
+    margin-top: 1000px;
+    margin-right: 50px;
 }
