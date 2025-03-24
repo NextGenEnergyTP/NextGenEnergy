@@ -1,24 +1,26 @@
+
 /* STILE PRINCIPALE DELLA PAGINA */
 body {
-    background-color: #CD5C5C;  
+    background-color: #CD5C5C;  /* Colore di sfondo del body */
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
     overflow: hidden;
 }
 
 /* Container per i rettangoli */
 .containerRettangolo {
-    margin-top: 100px;
+    margin-top: 280px;
 }
 
-/* Rettangoli tricolore */
+/* Rettangolo con larghezza completa e altezza di 10px */
 .rettangolo {
-    width: 100%;
-    height: 10px;
+    width: 100%;    /* Larghezza di 100% della pagina */
+    height: 10px;  /* Altezza di 10px */
 }
 
+/* Colori per i rettangoli */
 .verde {
     background-color: green;
 }
@@ -34,110 +36,103 @@ body {
 /* ANIMAZIONE IMMAGINE */
 .animazioneImm {
     position: absolute;
-    width: 150px;  
-    height: auto;  
-    animation: muoviImmagine 5s ease-in-out forwards;  
-    top: 0;
-    left: -100px;
+    width: 150px;  /* Imposta la larghezza dell'immagine */
+    height: auto;  /* L'altezza verrà adattata in modo proporzionale */
+    animation: muoviImmagine 5s ease-in-out forwards;  /* Anima l'immagine con la durata di 5 secondi */
+    margin-top: -280px;
 }
 
+/* Definisci l'animazione con @keyframes */
 @keyframes muoviImmagine {
     0% {
-        left: -100px;
+        left: -100px;  /* L'immagine parte fuori dalla pagina a sinistra */
     }
     100% {
-        left: 400px;
+        left: 400px;  /* L'immagine si ferma a 400px dalla sinistra */
     }
 }
 
 /* MENU */
+/* Stile per il menu */
 nav {
-    background-color: #333;
-    padding: 15px 0; /* Aumenta leggermente per dare più altezza */
-    position: relative; /* Permette al div successivo di posizio
+    background-color: #333;  /* Sfondo del menu */
+    padding: 1px 0;  /* Distanza superiore e inferiore ridotta (meno alto) */
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Rimuove i pallini predefiniti */
+    display: flex;  /* Allinea i menu orizzontalmente */
+    justify-content: center; /* Centra il menu */
     margin: 0;
     padding: 0;
 }
 
 .menu li {
-    margin: 0 40px;
+    margin: 0 80px; /* Distanza maggiore tra gli elementi del menu */
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura */
     font-size: 18px;
     padding: 10px 20px;
     display: block;
-    transition: color 0.2s, box-shadow 0.2s ease;
-    border: 2px solid transparent;
+    transition: color 0.1s, box-shadow 0.1s ease; /* Aggiunge transizione per l'illuminazione */
+    border: 2px solid transparent; /* Aggiungi un bordo trasparente inizialmente */
 }
 
+/* Stile per il passaggio del mouse (hover) */
 .menu a:hover {
-    color: #ff6347;
-    box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
-    border-color: #ff6347;
+    color: #ff6347;  /* Cambia il colore del testo quando il mouse passa sopra */
+    box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347; /* Illumina con un'ombra rossastra */
+    border-color: #ff6347;  /* Aggiunge un bordo di colore */
 }
-
-/* Dropdown menu */
-.dropdown {
+ /* Dropdown menu */
+        .dropdown {
+    border: none;
     display: none;
     position: absolute;
     background-color: transparent;
     min-width: 180px;
     list-style: none;
     padding: 0;
-    z-index: 1;
+    box-shadow: none;
+    z-index: 1;  /* Aggiungi questo per assicurarti che il menu si sovrapponga sopra gli altri elementi */
 }
 
-.dropdown li {
-    display: block;
-}
+        .dropdown li {
+            display: block;
+            justify-content: center; /* Centra orizzontalmente */
+            align-items: center; /* Centra verticalmente */
+        }
 
-.dropdown a {
-    color: black;
-    padding: 10px;
-    display: block;
-}
+        .dropdown a {
+            color: black;
+            padding: 10px;
+            display: block;
+        }
 
-.dropdown a:hover {
-    background-color: lightgray;
-}
+        .dropdown a:hover {
+            background-color: lightgray;
+        }
 
-/* Mostra il menu a tendina al passaggio del mouse */
-.menu li:hover .dropdown {
-    display: block;
-}
+        /* Mostra il menu a tendina al passaggio del mouse */
+        .menu li:hover .dropdown {
+            display: block;
+        }
 
-/* SOCIAL */
+/*SOCIAL*/
 #instagram, #facebook, #x {
+    position: relative; /* Era absolute, lo rendiamo relativo per rimanere dentro il dropdown */
     cursor: pointer;
-    width: 50px;
+    width: 50px; /* Riduciamo la dimensione */
     height: 50px;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; /* Effetto di ingrandimento */
     vertical-align: middle;
 }
 
 #instagram:hover, #facebook:hover, #x:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); /* Leggero ingrandimento */
 }
 
-/* QUADRATO INFORMAZIONI */
-.informazione {
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    width: 350px;
-    height: 500px;
-    position: absolute;
-    top: calc(15px + 50px);  /* Altezza del menu + distanza */
-    left: 20px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+
