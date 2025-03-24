@@ -53,7 +53,8 @@ body {
 /* MENU */
 nav {
     background-color: #333;
-    padding: 10px 0;
+    padding: 15px 0; /* Aumenta leggermente per dare più altezza */
+    position: relative; /* Permette al div successivo di posizio
 }
 
 .menu {
