@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Sito ufficiale NextGenEnergy</title>
+        <link rel="stylesheet" href="stile.css">
+    </head>
+    <body>
+        <script>
+            function clearPage() {
+                document.getElementById("contenuto").style.display = "none";  // Nasconde il contenuto
+                document.getElementById("nuovoTesto").style.display = "block"; // Mostra il nuovo contenuto
+            }
+
+            function showHome() {
+                document.getElementById("nuovoTesto").style.display = "none"; // Nasconde il nuovo contenuto
+                document.getElementById("contenuto").style.display = "block"; // Mostra il contenuto principale
+            }
+        </script>
+
+        <!-- Contenuto principale -->
+        <div id="contenuto">
+            <img src="logo1.png" alt="Immagine animata" class="animazioneImm">
+            <img src="nextgenenergy.png" alt="Immagine animata2" class="animazioneImm2">
+            
+            <div class="containerRettangolo">
+                <div class="rettangolo verde"></div>
+                <div class="rettangolo bianco"></div>
+                <div class="rettangolo rosso"></div>
+            </div>
+
+            <!-- Menu che appartiene al contenuto principale -->
+          <nav>
+    <ul class="menu">
+        <li><a href="index.html">Introduzione</a></li>
+        <li><a href="#" onclick="clearPage()">Infografica</a></li>
+        <li><a href="#">Video Elaborato</a></li>
+        <li>
+            <a href="#">Seguici sui nostri social ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img id="instagram" src="instagram1.png" alt="Instagram">
+                    </a>
+                </li>
+                <li><a href="https://www.facebook.com" target="_blank">
+                    <img id="facebook" src="facebook.png" alt="facebook">
+                </a></li>
+                <li><a href="https://www.x.com" target="_blank">
+                    <img id="x" src="x.png" alt="x">
+                </a></li>
+            </ul>
+        </li>
+    </ul>
+              
+
+</nav>
+            
+      <div class="infogram-embed" data-id="064f6e1c-399f-40b2-a037-3b697bc17c88" data-type="interactive" data-title="PCTO sondaggio"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/064f6e1c-399f-40b2-a037-3b697bc17c88" style="color:#989898!important;text-decoration:none!important;" target="_blank">PCTO sondaggio</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+
+    </body>
+</html>
